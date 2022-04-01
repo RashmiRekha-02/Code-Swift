@@ -1,0 +1,29 @@
+//Write a function
+to check given input string having should not be less than 5 chars and max would be 32 char
+To check given input number is between the range 5 numbers and max would be 10
+To check given string is a valid email string or not
+
+func checkChar(str:String)->Bool {
+  if (str.count>=5 && str.count<=32){
+    return true
+  }
+  return false
+}
+print(checkChar(str:"rashmi"))
+
+func checkInt(num:Int)->Bool {
+  if (num>=5 && num<=10){
+    return true
+  }
+  return false
+}
+print(checkInt(num: 7))
+
+
+func checkValidEmail(str:String)->Bool {
+  if(str.contains("@")){
+    return true
+  }
+  return false
+}
+print(checkValidEmail(str: "rashmi123"))
