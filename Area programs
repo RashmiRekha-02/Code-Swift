@@ -1,0 +1,24 @@
+//Area of circle
+func areaCircleFunction(radius:Double)->Double{
+  let pi = 3.14
+  let area = pi*radius*radius
+  print(area)
+  return 0.0
+}
+print(areaCircleFunction(radius:2.0))
+
+//area of square
+func areaSquareFunction(side:Double){
+  
+  let area = side*side
+  print(area)
+}
+print(areaSquareFunction(side:2.0))
+
+//area of rectangle
+func areaRectangleFunction(length:Double,breadth:Double){
+  
+  let area = length*breadth
+  print(area)
+}
+print(areaRectangleFunction(length:2.0,breadth:3.0))
