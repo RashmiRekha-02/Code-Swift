@@ -1,4 +1,45 @@
-//String operations 
+//Concatenate
+
+func concatenateFunction(s1:String,s2:String){
+  print(s1+" " + s2)
+
+}
+concatenateFunction(s1:"rashmi", s2:"rekha")
+
+//find length count
+
+func lengthFunction(s1:String){
+  print(s1.count)
+
+}
+lengthFunction(s1:"rashmi rekha")
+
+
+
+//Reverse String 
+
+func reverseFunction(s1:String){
+  print(String(s1.reversed()))
+
+}
+reverseFunction(s1:"amazing")
+
+
+//lowercase and uppercase 
+
+func lowerCaseFunction(s1:String){
+  print(s1.lowercased)
+
+}
+lowerCaseFunction(s1:"RASHMI REKHA")
+
+func upperCaseFunction(s1:String){
+  print(s1.uppercased())
+
+}
+upperCaseFunction(s1:"yesterday was amazing")
+
+//operations
 let word = "yesterday was holiday!#"
 var word3 = word[word.startIndex]
 print(word3)
