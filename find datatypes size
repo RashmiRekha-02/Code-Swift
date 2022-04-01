@@ -1,0 +1,11 @@
+//To find size of all datatypes
+
+
+func dataTypesFunction(val1:Int,val2:Float,val3:Bool,val4:Double,val5:Character)->(){
+  print("Size of var1  : ",MemoryLayout.size(ofValue: val1))
+  print("Size of var2  : ",MemoryLayout.size(ofValue: val2))
+  print("Size of var3  : ",MemoryLayout.size(ofValue: val3))
+  print("Size of var4  : ",MemoryLayout.size(ofValue: val4))
+  print("Size of var5  : ",MemoryLayout.size(ofValue: val5))
+}
+print(dataTypesFunction(val1:10,val2:10.24,val3:true,val4:10.24,val5:"!"))
