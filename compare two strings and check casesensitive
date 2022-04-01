@@ -1,0 +1,21 @@
+//to compare lowercase and upeercase are same or not
+let a = "a"
+let capitalA = "A"
+print(a.compare(capitalA, options: .caseInsensitive))
+
+
+//To compare two strings apart from casesensitive
+
+func compareFunction(s1:String,s2:String){
+  if(s1 == s2){
+    print("s1 is same as s2 ")
+  }
+  else if(s1 > s2){
+    print("s1 is greater")
+  }
+  else{
+    print("s2 is greater")
+  }
+  print(s1.compare(s2, options: .caseInsensitive))
+}
+compareFunction(s1: "rashmi", s2: "Rashmi")
