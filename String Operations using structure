@@ -1,0 +1,20 @@
+struct SampClosureStruct{
+   var tempClosure = { (first:String) ->(Int)in 
+    print(first + " String")
+   var word = "Concatenate"
+    word +=  first
+   let mark:Character = "!"
+   word.append(mark)
+  let start = "Programming language"
+   print(start[start.startIndex])
+   print(start[start.index(before: start.endIndex)])
+   var word2 = "Incture"
+   print(word2.insert("?",at: word2.endIndex))
+   print(word2)
+   let word3=word2.remove(at:word2.index(word2.endIndex , offsetBy: -1))
+    print(word2)
+    return first.count
+   }
+}
+var tempObj = SampClosureStruct()
+ print(tempObj.tempClosure(" operation"))
