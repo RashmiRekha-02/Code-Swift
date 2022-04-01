@@ -1,0 +1,23 @@
+func taskFunction(operand1:Int,operand2:Int,operation:String)->Int{
+   if(operation == "+"){
+       print("Result is:",operand1 + operand2)
+   }
+   else if (operation == "-"){
+       print("Result is:",operand1 - operand2)
+   }
+   else if(operation == "*"){
+       print("Result is:",operand1 * operand2)
+   }
+   else if(operation == "/"){
+       print("Result is:",operand1 / operand2)
+   }
+   else if (operation == "%"){
+       print("Result is:",operand1 % operand2)
+   }
+   else
+   {
+       print("operator cannot be identified")
+   }
+    return 0
+}
+taskFunction(operand1:100,operand2:50,operation:"*")
