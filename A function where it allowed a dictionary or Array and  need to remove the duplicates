@@ -1,0 +1,25 @@
+//function where it allowed an Array and need to remove the duplicates
+
+var var2 = ["e","o","e","f","o","h"]
+
+func removeDuplicates(var2:[String]) -> [String]
+{
+let newArr2 = Array(Set(var2))
+return newArr2
+} 
+print(removeDuplicates(var2:var2))
+
+//function where it allowed a dictionary and need to remove the duplicates
+
+var dict2: [String:Int] = ["e": 3,"o":5,"a":3,"f":7,"i":5,"h":6,"g":6]
+func removeDuplicates2(dict2:[String:Int]) -> [String:Int] {
+var result: [String:Int] = [:]
+for (key, value) in dict2 {
+    if !result.values.contains(value) {
+        result[key] = value
+    }
+}
+return result
+}
+print(removeDuplicates2(dict2: dict2))
+
