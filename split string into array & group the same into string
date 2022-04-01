@@ -1,0 +1,13 @@
+//Split the string into an array and group the same array into an string
+
+var str = "Code with swift"
+var newArr = str.split(separator: " ")
+var newStr = newArr.joined(separator: "")
+print(newArr)
+print(newStr)
+
+ var str1 = "Code"
+ let str2 = Array(str1)
+ let str3 = String(str2)
+ print(str2)
+ print(str3)
