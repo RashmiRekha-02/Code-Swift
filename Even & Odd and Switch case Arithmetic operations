@@ -1,0 +1,28 @@
+//SWITCH CASE
+
+let num1 = 30, num2 = 50
+var operator1 = "*"
+switch operator1 {
+case "+":
+print(num1 + num2)
+case "-":
+print(num1 - num2) 
+case "*":
+print(num1 * num2)
+case "/":
+print(num1 / num2)
+case "%":
+print(num1 % num2)
+default:
+print("invalid")
+}
+
+
+//Even odd
+for number in 1...10{
+if number % 2 == 0 {
+print("\(number) is even number")
+} else {
+print("\(number) is odd number") } }
+
+
