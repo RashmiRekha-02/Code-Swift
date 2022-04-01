@@ -1,0 +1,5 @@
+//Join all the strings into an array into a single string.
+
+	var array:[String] = ["Pineapple", "Berries", "Orange", "Apple", "Banana"]
+	var join = array.joined(separator:",")
+	print(join)
