@@ -1,0 +1,10 @@
+//Swapping
+
+func myFunction4()->Int{
+  var x = 10
+  var y = 6
+  (x,y) = (y,x)
+  return y
+
+}
+print(myFunction4())
