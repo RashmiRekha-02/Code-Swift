@@ -1,0 +1,43 @@
+//String operations 
+let word = "yesterday was holiday!#"
+var word3 = word[word.startIndex]
+print(word3)
+var word4 = word[word.index(before: word.endIndex)]
+print(word4)
+var word5 = word[word.index(after: word.startIndex)]
+print(word5)
+
+var word6 = word[word.index(word.startIndex, offsetBy: 3)]
+print(word6)
+
+var name = "rekha"
+name.insert("#", at: name.startIndex)
+name.insert(contentsOf: " wow", at: name.index(before: name.endIndex))
+name.remove(at: name.index(before: name.endIndex))
+print(name)
+
+//split operations
+ var namme = "Rashmi-Rekha-Acharya"
+ let fname = namme.components(separatedBy: "-")
+ print(fname[0])
+ print(fname[1])
+ print(fname[2])
+
+var name2 = "Rashmi Rekha"
+
+var subString = name2[name2.index(name2.startIndex, offsetBy: 0)..<name2.index(name2.startIndex, offsetBy: 6)]
+print(subString)
+
+var c=0
+for char in name2 {
+  if(char == " ")
+  {
+c+=1
+  }
+}
+print(c)
+
+let  str = "code with swift"
+var  limit: Range<String.Index> = str.range(of: "swift")!
+let substring = str[..<limit.lowerBound]
+print(substring)
