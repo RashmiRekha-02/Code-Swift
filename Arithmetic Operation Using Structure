@@ -1,0 +1,27 @@
+struct TempClosureStruct{
+    var tempClosure = { (temp:String)->() in
+        print(temp)
+        return 
+    }
+}
+var tempObj = TempClosureStruct()
+tempObj.tempClosure("Arithmetic Operations")
+struct ArithmeticStruct{
+    func addFunction(num1: Int, num2: Int) {   
+      print(num1+num2)
+    }
+    func mulFunction(num1: Int, num2: Int) {
+      print(num1*num2)        
+    }
+    func divFunction(num1: Int, num2: Int) {
+       print(Double(num1)/Double(num2)) 
+    }
+    func modFunction(num1: Int, num2: Int) {
+       print(Double(num1%num2)) 
+    }
+}
+var arthobj = ArithmeticStruct()
+arthobj.addFunction(num1: 20, num2: 30)
+arthobj.mulFunction(num1: 150, num2: 30)
+arthobj.divFunction(num1: 270, num2: 13)
+arthobj.modFunction(num1: 200, num2: 10)
