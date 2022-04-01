@@ -1,0 +1,19 @@
+//To find number of alphabets, digits and special character
+func countFunction(s1:String){
+  var countchar = 0
+  var countnum = 0
+  var countspl = 0
+  for char in s1 {
+    if((char >= "a" && char <= "z") || (char >= "A" && char <= "Z")){
+       countchar += 1
+    }
+    else if (char >= "0" && char <= "9"){
+        countnum += 1
+    }
+    else {
+      countspl += 1
+    }
+  }
+  print("No of Alphabets \(countchar), no of digits \(countnum), no of special character \(countspl)")
+}
+countFunction(s1:"amazing!123#")
