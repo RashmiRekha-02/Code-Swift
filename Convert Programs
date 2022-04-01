@@ -1,0 +1,18 @@
+//Convert prgrms feet to meter
+
+func convertFunction(feet:Double)->Double{
+  let num = 3.281
+  let meter = feet/num
+  print(meter)
+  return 0
+}
+print(convertFunction(feet:40))
+
+////Convert prgrms farhenheit to celsius
+
+func convertFunction2(farh:Double)->Double{
+  let celsius = (farh - 32)*(5/9)
+  print(celsius)
+  return 0
+}
+print(convertFunction2(farh:78.8))
