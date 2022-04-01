@@ -1,0 +1,12 @@
+func commonLetter(str:String)->String{
+var tempArr = [String]()
+for alphabet in str {
+if tempArr.contains(String(alphabet)){
+print(alphabet)
+}else {
+tempArr.append(String(alphabet))
+}
+}
+return str
+}
+commonLetter(str:"yesterday")
