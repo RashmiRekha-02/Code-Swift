@@ -1,0 +1,9 @@
+//ASCII value 
+ //using function 
+ 
+func asciiValue(str:String){
+  for ch in str.utf8 {
+    print(ch, terminator: "\n ")
+  }
+} 
+asciiValue(str:"ABCDE")
