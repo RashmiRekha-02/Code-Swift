@@ -16,3 +16,16 @@ func convertFunction2(farh:Double)->Double{
   return 0
 }
 print(convertFunction2(farh:78.8))
+
+//Convert days to week ,years and months
+
+func convertFunction5(days:Int)->Int{
+  let year = days/365
+  let week = (days%365)/7
+  let days = days - ((year*365) + (week*7))
+  print(year)
+  print(week)
+  print(days)
+  return 0
+}
+print(convertFunction5(days:1329))
