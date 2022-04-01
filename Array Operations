@@ -1,0 +1,37 @@
+//Array Operations using function
+
+class ArrayClass {
+func swiftArrayAppend (numbers :[Int])->[Int] {
+    var p=numbers
+    p.append(20)
+    p += [40]
+   return(p)
+  }
+  func swiftArrayInsert (numbers :[Int])->[Int] {
+      var p=numbers
+      p.insert(30 , at:2)
+      return(p)
+    }
+  func swiftArrayModify (numbers :[Int], pos:Int,posNum:Int)->[Int] {
+      var p=numbers
+      p[pos] = posNum
+      p[2] = 90
+      return(p)
+       }
+  func swiftArrayRemove (numbers: [Int],pos:Int)->[Int] {
+      var p=numbers
+      p.remove(at: 2)
+      p.removeFirst()
+      p.removeLast()
+      p.removeAll()
+      return(p)
+    }
+}
+var sampObject = ArrayClass()
+var arr = [1,2,3,4]
+//arr = sampObject.swiftArrayAppend(numbers:arr)
+//arr = sampObject.swiftArrayInsert(numbers:arr)
+//arr = sampObject.swiftArrayModify(numbers:arr,pos:1,posNum:25)
+arr = sampObject.swiftArrayRemove(numbers:arr,pos:2)
+print (arr)
+
