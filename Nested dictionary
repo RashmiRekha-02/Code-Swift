@@ -1,0 +1,18 @@
+//create a nested dictionary(dictionary within dictionary)
+
+var dict1:[Int:String] = [1:"one",2:"two",3:"three",4:"four",5:"five"]
+var dict2:[String:Int] = ["First":1,"Second":2,"third":3,"fourth":4,"fifth":5] 
+var dict3 = [String : [Int : String]]()
+
+for i in dict2 {
+    for j in dict1 {
+        if(i.value==j.key)
+        {
+           let dict4:[String : [Int : String]] =  [i.key:[j.key:j.value]]
+           dict3.merge(dict4){(_,new) in new}
+        }
+    }
+}
+print(dict3)
+
+
