@@ -1,0 +1,16 @@
+//prime nos
+let nos = 18
+var i = 2
+var c = 0
+
+for _ in i...nos-1 {
+  if(nos%i == 0){
+    c += 1
+  }
+}
+  if(c == 0){
+    print("Prime")
+  }
+  else {
+    print("not prime")
+  }
