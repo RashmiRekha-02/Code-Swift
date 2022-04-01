@@ -1,0 +1,15 @@
+//Write a function to generate some random unique number and that should be concatenated to the input string
+
+func getUniqueRandomValues(min:Int,max:Int,count:Int,str:String) ->String{
+  var set = Set<Int>()
+  while set.count < count {
+    set.insert(Int.random(in: min...max))
+  }
+  let str1 = Array(set)
+  let str2 = str1.map{ String($0)}
+  let string = str2.joined(separator:"")
+  //let string = Array(set).map { String($0)}.joined(separator:"")
+  print(string)
+  return str+string
+}
+print(getUniqueRandomValues(min:1,max:10,count:5,str:"swift"))
