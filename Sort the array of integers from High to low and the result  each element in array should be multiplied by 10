@@ -1,0 +1,7 @@
+//sort the array of int from high-low and result of each element is multiplied by 10
+
+var arr = [12,5,6,2,30,22,55,3,7]
+arr.sort(by:>) 
+print(arr)
+let newarr5 = arr.map { $0 * 10 }
+print(newarr5)
