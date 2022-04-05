@@ -10,6 +10,7 @@ let str = ["3","tg","5","li","9","2","de"]
 let num2 = str.compactMap { Int($0) }
 print(num2)
 
+//To print both string and int type as integers
 let arr3:[Any] = [7,"efg","ght",8,"thy","4","5"]
 var num = arr3.compactMap { $0 as? Int }
 print(num)
