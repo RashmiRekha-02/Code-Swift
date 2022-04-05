@@ -6,3 +6,15 @@ let dateFormatter = DateFormatter()
 dateFormatter.dateFormat = "dd-MM-yyyy"
 var date1 = dateFormatter.string(from: day)
 print(date1)
+
+
+//Conversion from string to specific date format
+
+let date2 = DateFormatter()
+date2.dateFormat = "ddMMyyyy"
+
+let date3 = DateFormatter()
+date3.dateFormat = "MM-dd-yyyy"
+
+let date: Date? = date2.date(from:"10042020")
+print(date3.string(from:date!))
