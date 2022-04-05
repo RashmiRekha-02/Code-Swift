@@ -1,0 +1,8 @@
+//Print the Today date and convert to the format “”DD-MM-YYYY”
+
+var day = Date()
+print(day)
+let dateFormatter = DateFormatter()
+dateFormatter.dateFormat = "dd-MM-yyyy"
+var date1 = dateFormatter.string(from: day)
+print(date1)
