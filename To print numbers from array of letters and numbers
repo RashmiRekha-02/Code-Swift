@@ -1,0 +1,21 @@
+//Print only number from an Array of letters and numbers
+
+let arr5:[Any] = [7,"efg","ght","8","thy","4","5"]
+//let num1 = arr5.flatMap {$0 as? Int}
+let num1 = arr5.compactMap { $0 as? Int }
+print(num1)
+
+
+let str = ["3","tg","5","li","9","2","de"]
+let num2 = str.compactMap { Int($0) }
+print(num2)
+
+let arr3:[Any] = [7,"efg","ght",8,"thy","4","5"]
+var num = arr3.compactMap { $0 as? Int }
+print(num)
+var number = arr5.compactMap { $0 as? String }
+print(number)
+var num4 = number.compactMap {Int($0)}
+// print(num4)
+var newNum = num4 + num
+print(newNum)
