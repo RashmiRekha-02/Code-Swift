@@ -10,13 +10,17 @@ let str = ["3","tg","5","li","9","2","de"]
 let num2 = str.compactMap { Int($0) }
 print(num2)
 
-//To print both string and int type as integers
+//To print all numbers even if we take some numbers as string 
+
 let arr3:[Any] = [7,"efg","ght",8,"thy","4","5"]
 var num = arr3.compactMap { $0 as? Int }
 print(num)
 var number = arr5.compactMap { $0 as? String }
 print(number)
 var num4 = number.compactMap {Int($0)}
-// print(num4)
-var newNum = num4 + num
-print(newNum)
+print(num4)
+
+// var newNum = num4 + num
+// print(newNum)
+num4.append(contentsOf: num)
+print(num4)  or print(num4.description)
